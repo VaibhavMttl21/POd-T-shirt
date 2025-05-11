@@ -1,7 +1,7 @@
-# Project Frontend
+# T-Shirt Designer
 
 ## Overview
-This is the frontend component of our project. It provides a user interface for interacting with the application's features and services.
+An interactive T-Shirt design application that allows users to customize shirts based on their measurements, add custom text and images, and receive size recommendations. The app features multiple color themes and a responsive design.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -10,19 +10,19 @@ This is the frontend component of our project. It provides a user interface for 
 - [Technologies](#technologies)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
-- [License](#license)
+- 
 
 ## Installation
 
 ### Prerequisites
-- Node.js (v14.0.0 or higher)
-- npm (v6.0.0 or higher)
+- Node.js (v16.0.0 or higher)
+- npm (v7.0.0 or higher)
 
 ### Setup
 1. Clone the repository
    ```bash
-   git clone https://github.com/username/project.git
-   cd project/frontend
+   git clone https://github.com/username/t-shirt-designer.git
+   cd t-shirt-designer/frontend
    ```
 
 2. Install dependencies
@@ -41,34 +41,43 @@ Build for production:
 npm run build
 ```
 
+Preview the production build:
+```bash
+npm run preview
+```
+
 ## Features
-- Responsive design
-- Interactive UI components
-- Real-time data updates
-- Cross-browser compatibility
+- Customizable T-Shirt design based on user measurements
+- Interactive visual preview with real-time updates
+- Size recommendations based on user's height, weight, and build type
+- Theme customization with three different color schemes (shortcut: Alt+Q)
+- Upload custom images via drag-and-drop or file selection
+- Add up to three lines of custom text
+- Responsive design for desktop and mobile devices
+- Dark mode support
 
 ## Technologies
-- JavaScript/TypeScript
-- React.js
-- CSS/SCSS
-- RESTful API integration
+- TypeScript
+- React 19
+- Vite
+- Tailwind CSS
+- React Hook Form
+- Framer Motion for animations
+- React Dropzone for file uploads
+- Heroicons
 
 ## Project Structure
 ```
 frontend/
 ├── public/
 ├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── hooks/
-│   ├── pages/
-│   ├── services/
-│   ├── styles/
-│   ├── utils/
-│   ├── App.js
-│   └── index.js
-├── package.json
-└── README.md
+│   ├── App.tsx          # Main application component
+│   └── main.tsx         # Entry point
+├── index.html           # HTML template
+├── tsconfig.json        # TypeScript configuration
+├── tailwind.config.js   # Tailwind CSS configuration
+├── vite.config.ts       # Vite configuration
+└── package.json         # Dependencies and scripts
 ```
 
 ## Contributing
@@ -78,8 +87,5 @@ frontend/
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Contact
-Project Maintainer - [your-email@example.com](mailto:your-email@example.com)
+Project Maintainer - [mittalvaibhav73@gmail.com](mailto:mittalvaibhav73@gmail.com)
